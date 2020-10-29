@@ -1,17 +1,5 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
 body {
-  font-family: 'Times', sans-serif;
+  font-family: 'Grandstander', sans-serif;
   font-size: 16px;
 }
 body.active {
@@ -313,6 +301,7 @@ footer {
 #about p {
   color: #74808a;
   margin: 0;
+  text-align: justify;
 }
 #experience {
   padding: 50px 15px;
@@ -372,9 +361,10 @@ footer {
   margin: 0 0 15px 0;
 }
 .vtimeline-content p {
-  color: #74808a;
+  color: #000000;
   font-size: 0.9em;
   margin: 0;
+  text-align: justify;
 }
 .vtimeline-point {
   position: relative;
@@ -444,8 +434,9 @@ footer {
 .education-block p,
 .education-block ul {
   margin: 0;
-  color: #74808a;
+  color: #000000;
   font-size: 0.9em;
+  text-align: justify;
 }
 .education-block ul {
   padding: 0 0 0 15px;
