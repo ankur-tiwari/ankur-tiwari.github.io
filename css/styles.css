@@ -213,7 +213,7 @@ footer {
   height: 100vh;
   min-height: 500px;
   max-height: 1080px;
-  background: url(../images/lead-bg.jpg);
+  background: url(../images/lead-bg.webp);
   background-size: cover;
   padding: 15px;
   overflow: hidden;
@@ -252,7 +252,6 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #be202f96;
   z-index: 1;
 }
 #lead-down {
