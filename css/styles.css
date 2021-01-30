@@ -6,6 +6,33 @@ body.active {
   overflow: hidden;
   z-index: -1;
 }
+
+.title-div {
+  background: 50% 100% / 50% 50% no-repeat
+              radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 10vw;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+
+  
+}
+
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
 .no-js #experience-timeline > div {
   background: #fff;
   padding: 10px;
@@ -185,7 +212,7 @@ footer {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .shadow-large {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: rgb(0 0 0 / 12%) 4px 2px 1px 1px;
 }
 .heading {
   position: relative;
@@ -213,11 +240,16 @@ footer {
   height: 100vh;
   min-height: 500px;
   max-height: 1080px;
-  background: url(../images/lead-bg.webp);
+  background-color: #333;
+  /* background: url(../images/lead-bg.webp); */
   background-size: cover;
   padding: 15px;
   overflow: hidden;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+  min-height: 500px;
 }
+
 #lead-content {
   position: absolute;
   z-index: 10;
@@ -306,9 +338,12 @@ footer {
   padding: 50px 15px;
   text-align: center;
   border-bottom: 1px solid #dcd9d9;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+  min-height: 500px;
 }
 #experience h2 {
-  color: #374054;
+  color: #fff;
 }
 #experience-timeline {
   margin: 30px auto 0 auto;
@@ -324,7 +359,7 @@ footer {
   right: auto;
   height: 100%;
   width: 3px;
-  background: #be202f;
+  background: #fff;
   z-index: 0;
 }
 #experience-timeline:after {
@@ -332,8 +367,8 @@ footer {
   content: '';
   width: 3px;
   height: 40px;
-  background: #be202f;
-  background: linear-gradient(to bottom, #be202f, rgba(52, 152, 219, 0));
+  background: #fff;
+  background: linear-gradient(to bottom, #fff, rgba(52, 152, 219, 0));
   top: 100%;
   left: 303px;
 }
@@ -349,14 +384,14 @@ footer {
 .vtimeline-content h3 {
   font-size: 1.5em;
   font-weight: 300;
-  color: #374054;
+  color: #fff;
   display: inline-block;
   margin: 0;
 }
 .vtimeline-content h4 {
   font-size: 1.2em;
   font-weight: 300;
-  color: #7e8890;
+  color: #fff;
   margin: 0 0 15px 0;
 }
 .vtimeline-content p {
@@ -376,7 +411,7 @@ footer {
   color: #fff;
   width: 50px;
   height: 50px;
-  background: #be202f;
+  background: #fff;
   border-radius: 50%;
   float: left;
   z-index: 99;
@@ -394,7 +429,7 @@ footer {
   left: 0;
   top: 10px;
   font-weight: 300;
-  color: #374054;
+  color: #fff;
 }
 #education {
   padding: 50px 15px 20px 15px;
@@ -406,12 +441,12 @@ footer {
   margin-bottom: 50px;
 }
 .education-block {
-  max-width: 700px;
+  max-width: 850px;
   margin: 0 auto 30px auto;
   padding: 15px;
   border: 1px solid #dcd9d9;
   text-align: left;
-  box-shadow: 2px 2px 2px 2px #33333338;
+  box-shadow: 0px 3px 11px 12px #21202014;
 }
 }
 .education-block h3 {
@@ -444,9 +479,12 @@ footer {
   padding: 50px 15px;
   border-bottom: 1px solid #dcd9d9;
   text-align: center;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+  min-height: 500px;
 }
 #projects h2 {
-  color: #374054;
+  color:#fff;
   margin-bottom: 50px;
 }
 .project {
@@ -464,7 +502,7 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 300px;
+  margin-left: 400px;
   padding: 15px;
 }
 .project-info h3 {
@@ -505,16 +543,18 @@ footer {
   display: inline-block;
   margin: 7px;
   padding: 5px 10px;
-  color: #374054;
-  background: #c9c9df;
+  color: #fff;
+  background: #004E95;
   list-style: none;
   cursor: default;
   font-size: 1.2em;
 }
 #contact {
   padding: 50px 15px;
-  background: #be202f;
   text-align: center;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+  min-height: 500px;
 }
 #contact h2 {
   margin: 0 0 15px 0;
@@ -533,17 +573,17 @@ footer {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: #800410;
-  color: #fff;
+  background: #fff;
+  color: #000;
   transition: 0.5s ease all;
 }
 #contact-form input::-webkit-input-placeholder,
 #contact-form textarea::-webkit-input-placeholder {
-  color: #fff;
+  color: #000;
 }
 #contact-form input:-moz-placeholder,
 #contact-form textarea:-moz-placeholder {
-  color: #fff;
+  color: #000;
   opacity: 1;
 }
 #contact-form input::-moz-placeholder,
@@ -558,7 +598,7 @@ footer {
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  background: #16527a;
+  background: #fff;
 }
 #contact-form textarea {
   height: 150px;
@@ -755,3 +795,5 @@ footer {
     transform: translate(100%);
   }
 }
+
+
