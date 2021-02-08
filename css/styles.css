@@ -197,7 +197,8 @@ footer {
 }
 .btn-rounded-white {
   display: inline-block;
-  color: #fff;
+  color: #000;
+  background-color: #fff;
   padding: 15px 25px;
   border: 3px solid #fff;
   border-radius: 30px;
@@ -209,7 +210,7 @@ footer {
   text-decoration: none;
 }
 .shadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 10px 20px 5px rgb(0 0 0 / 10%);
 }
 .shadow-large {
   box-shadow: rgb(0 0 0 / 12%) 4px 2px 1px 1px;
@@ -384,14 +385,14 @@ footer {
 .vtimeline-content h3 {
   font-size: 1.5em;
   font-weight: 300;
-  color: #fff;
+  color: #013A6B;
   display: inline-block;
   margin: 0;
 }
 .vtimeline-content h4 {
   font-size: 1.2em;
   font-weight: 300;
-  color: #fff;
+  color: #013A6B;
   margin: 0 0 15px 0;
 }
 .vtimeline-content p {
@@ -446,8 +447,8 @@ footer {
   padding: 15px;
   border: 1px solid #dcd9d9;
   text-align: left;
-  box-shadow: 0px 3px 11px 12px #21202014;
-}
+  box-shadow: 0 10px 20px 5px rgb(0 0 0 / 10%);
+
 }
 .education-block h3 {
   font-weight: 500;
@@ -797,3 +798,10 @@ footer {
 }
 
 
+.primary-color {
+  color: #004E95;
+}
+
+.secondry-color {
+  color: #013A6B;
+}
